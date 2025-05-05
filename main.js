@@ -18,7 +18,7 @@ getPostTitle(22)
 function lanciaDado() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (Math.random < 0.2) {
+            if (Math.random() < 0.2) {
                 reject(`Il dado si è incastrato... Rilancia!`);
             } else {
                 const randomNum = Math.floor(Math.random() * 6) + 1;
